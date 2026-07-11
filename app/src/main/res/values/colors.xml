@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Pastel Palette -->
+    <color name="primary_pastel">#A7C7E7</color> <!-- Soft Blue -->
+    <color name="primary_dark_pastel">#779ECB</color>
+    <color name="accent_pastel">#FFB7B2</color> <!-- Soft Pink -->
+
+    <color name="bg_light">#F8F9FA</color>
+    <color name="card_bg">#FFFFFF</color>
+
+    <!-- Aesthetic Colors -->
+    <color name="aesthetic_stroke">#92A8D1</color> <!-- Serenity Blue -->
+    <color name="aesthetic_hint">#779ECB</color>
+    <color name="aesthetic_purple">#C3B1E1</color>
+
+    <!-- Category Colors (Pastel) -->
+    <color name="cat_seminar">#B2F2BB</color> <!-- Mint -->
+    <color name="cat_workshop">#E6E6FA</color> <!-- Lavender -->
+    <color name="cat_cultural">#FFDAB9</color> <!-- Peach -->
+    <color name="cat_sports">#C1E1C1</color> <!-- Sage -->
+    <color name="cat_other">#FDFD96</color> <!-- Soft Yellow -->
+
+    <color name="text_main">#2D3436</color>
+    <color name="text_secondary">#636E72</color>
+
+    <color name="unread_dot">#FF6B6B</color>
+</resources>

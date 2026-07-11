@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.EventManagementApp" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Main theme colors -->
+        <item name="colorPrimary">@color/primary_dark_pastel</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/accent_pastel</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSurface">@color/bg_light</item>
+        <item name="colorOnSurface">@color/black</item>
+
+        <item name="android:windowBackground">@color/bg_light</item>
+        <item name="android:statusBarColor">@color/primary_dark_pastel</item>
+
+        <!-- Default styles for Material 3 -->
+        <item name="textInputStyle">@style/Widget.Material3.TextInputLayout.OutlinedBox</item>
+        <item name="materialCardViewStyle">@style/Widget.Material3.CardView.Elevated</item>
+        <item name="materialButtonStyle">@style/Widget.Material3.Button</item>
+    </style>
+
+    <style name="Theme.EventManagementApp" parent="Base.Theme.EventManagementApp" />
+
+    <style name="ShapeAppearance.LargeComponent" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerSize">20dp</item>
+    </style>
+</resources>

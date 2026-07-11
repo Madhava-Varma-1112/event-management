@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvDetailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Event Title"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/tvDetailCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_category_badge"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="4dp"
+                android:textColor="@color/white"
+                android:text="Category"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tvInterestCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 Interested"
+                android:textStyle="bold"
+                android:textColor="@color/primary_dark_pastel"/>
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            style="@style/Widget.Material3.CardView.Elevated">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date &amp; Time"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:id="@+id/tvDetailDateTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:text="Date | Time"
+                    android:layout_marginBottom="12dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Venue"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:id="@+id/tvDetailVenue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:text="Venue Location"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:id="@+id/layoutUserActions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Are you attending?"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnInterested"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Interested"
+                    android:layout_marginEnd="4dp"
+                    style="@style/Widget.Material3.Button.TonalButton"/>
+
+                <Button
+                    android:id="@+id/btnNotInterested"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Not Interested"
+                    android:layout_marginStart="4dp"
+                    style="@style/Widget.Material3.Button.TonalButton"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSetReminder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Set Reminder"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"
+                style="@style/Widget.Material3.Button"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp"/>
+        <TextView
+            android:id="@+id/tvDetailDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:textColor="@color/black"
+            android:text="Full event description goes here..."
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/labelRewards"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rewards"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp"/>
+        <TextView
+            android:id="@+id/tvDetailRewards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:text="Rewards info..."
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact &amp; Organizer"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            style="@style/Widget.Material3.CardView.Elevated">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvDetailOrganizer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Organizer: Name"
+                    android:layout_marginBottom="4dp"/>
+
+                <TextView
+                    android:id="@+id/tvDetailFaculty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Faculty: Name"
+                    android:layout_marginBottom="12dp"/>
+
+                <Button
+                    android:id="@+id/btnContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Us"
+                    style="@style/Widget.Material3.Button.TonalButton"
+                    android:layout_marginBottom="8dp"/>
+
+                <Button
+                    android:id="@+id/btnWhatsapp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Join WhatsApp"
+                    android:backgroundTint="#25D366"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    style="@style/Widget.Material3.Button"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <Button
+            android:id="@+id/btnUpdateEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Request Update (Date/Time/Venue)"
+            android:visibility="gone"
+            android:layout_marginBottom="8dp"
+            style="@style/Widget.Material3.Button.TonalButton" />
+
+        <Button
+            android:id="@+id/btnRequestDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Request Event Deletion"
+            android:backgroundTint="#F44336"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            style="@style/Widget.Material3.Button" />
+
+    </LinearLayout>
+</ScrollView>
