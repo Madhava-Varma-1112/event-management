@@ -26,8 +26,8 @@ public class DatsbaseHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "EventManager_v35.db";
     private static final int DATABASE_VERSION = 1;
 
-    // Use actual host IP for physical device connections
-    private static final String BASE_URL = "http://192.168.29.227:5000";
+    // Production Render Backend URL
+    private static final String BASE_URL = "https://event-management-mu5b.onrender.com";
 
     public static synchronized DatsbaseHelper getInstance(Context context) {
         if (instance == null) {
